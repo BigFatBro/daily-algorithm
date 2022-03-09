@@ -51,6 +51,7 @@ class Solution {
 
                 combination.append(letters.charAt(i));
                 backtrack(combinations, phoneMap, digits, index+1, combination);
+                // 回溯时删除刚刚加入的字符
                 combination.deleteCharAt(index);
                 
             }
