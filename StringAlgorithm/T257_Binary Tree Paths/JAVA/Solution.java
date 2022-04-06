@@ -63,11 +63,11 @@ class Solution{
             }else{
                 if(node.left != null){
                     nodeQueue.offer(node.left);
-                    pathQueue.offer(new StringBuffer(path).append("->").append(node.left.val).toString())
+                    pathQueue.offer(new StringBuffer(path).append("->").append(node.left.val).toString());
                 }
                 if(node.right!=null){
                     nodeQueue.offer(node.right);
-                    pathQueue.offer(new StringBuffer(path).append("->").append(node.right.val).toString())
+                    pathQueue.offer(new StringBuffer(path).append("->").append(node.right.val).toString());
                 }
             }
         }
