@@ -30,6 +30,8 @@ func (this *MyStack) Pop() int {
 		this.que1 = this.que1[1:]
 	}
 	result := this.que1[0]
+
+	this.que1 = []int{}
 	this.que1 = append(this.que1, this.que2...)
 	this.que2 = []int{}
 	return result
